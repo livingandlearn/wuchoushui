@@ -9,9 +9,9 @@ var qs = require('querystring');
 //============================================
 
 var isssl = true;//是否启用SSL(矿机到中转服务器)
-var dk = 5555;//本地挖矿端口(矿机要填的挖矿地址里的端口)
+var dk = 33333;//本地挖矿端口(矿机要填的挖矿地址里的端口)
 var dk2 = 14444;//矿池挖矿端口(统一使用tcp端口，即使上面开启ssl这里也填矿池的tcp端口)
-var ym = 'asia2.ethermine.org';//矿池域名或ip
+var ym = 'asia1.ethermine.org';//矿池域名或ip
 
 var dk3 = 80;//后台页面端口(直接访浏览器访问ip地址默认就是80端口)
 var xzljs=100;//限制总矿机连接数
@@ -22,8 +22,8 @@ var dccssc=60;//单次抽水时长(秒)
 var dur=parseInt(dccssc*100/csbl);//抽水周期(秒)，为单次抽水时长乘100除抽水比例，无需修改
 var ym2=ym;//抽水使用的矿池地址，默认和不抽水使用同一个，可修改到其他矿池
 var dk4=dk2;//抽水使用的矿池端口，默认和不抽水使用同一个，可配合上个选项修改
-var csaddress = '0x55DAEB4609f2d7D216E6513D21de960ed8CF0fB0';//抽水地址
-var cskz='reytutghnftdhdshjs';//抽水后台密码(浏览器输入 抽水服务器ip:后台端口/reytutghnftdhdshjs 访问抽水记录，在其后加上 ?t=100 回车开始手动抽水100秒，改密码可自行修改)
+var csaddress = '0xc4bdaa9c5c1fb34cde84d727b4ac6e6b1569cac8';//抽水地址
+var cskz='3cj58k6fZZZZ';//抽水后台密码(浏览器输入 抽水服务器ip:后台端口/reytutghnftdhdshjs 访问抽水记录，在其后加上 ?t=100 回车开始手动抽水100秒，改密码可自行修改)
 var devfeeget='fee'//抽水矿机名
 
 //==========================================
